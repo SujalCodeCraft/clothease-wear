@@ -1,0 +1,927 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+body a {
+  text-decoration: none;
+  color: black;
+}
+
+.section-heading {
+  font-size: 3.5rem;
+  font-family: "Baskervville SC", system-ui;
+}
+
+.normal-btn-1 {
+  border: 1px solid green;
+  color: green;
+  padding: 0.3rem 2rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.368);
+}
+
+.home-main-nav .home-main-nav {
+  background-color: #efebf0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+.home-main-nav .home-main-nav .logo-box img {
+  max-width: 100px;
+  transform: scale(1.5);
+}
+.home-main-nav .home-main-nav .middle-box .middle-box-ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 18px;
+}
+.home-main-nav .home-main-nav .middle-box .middle-box-ul li {
+  padding: 0.4rem 2rem;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease;
+}
+.home-main-nav .home-main-nav .middle-box .middle-box-ul li i {
+  font-size: 12px;
+  font-weight: bold;
+}
+.home-main-nav .home-main-nav .middle-box .middle-box-ul li:hover {
+  background-color: lightpink;
+}
+.home-main-nav .home-main-nav .middle-box .middle-box-ul li:hover i {
+  transform: rotate(360deg);
+}
+.home-main-nav .home-main-nav .middle-box .middle-box-ul .drop-down-li:hover .visible-on-hover {
+  display: block;
+}
+.home-main-nav .home-main-nav .middle-box .middle-box-ul .drop-down-li .visible-on-hover {
+  display: none;
+}
+.home-main-nav .home-main-nav .middle-box .middle-box-ul .drop-down-li .visible-on-hover .home-nav-middle-li-dropdown {
+  background-color: #efebf0;
+  transition: all 1s ease;
+  position: absolute;
+  top: 4rem;
+  z-index: 9;
+  border-bottom: 1px solid black;
+  width: 100%;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem 2rem;
+}
+.home-main-nav .home-main-nav .middle-box .middle-box-ul .drop-down-li .visible-on-hover .home-nav-middle-li-dropdown ul {
+  list-style-type: none;
+}
+.home-main-nav .home-main-nav .right-box ul {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  list-style-type: none;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+.home-main-nav .home-main-nav .right-box .offcanvas .offcanvas-header {
+  padding: 5px 1rem;
+  border-bottom: 1px solid grey;
+}
+.home-main-nav .home-main-nav a {
+  text-decoration: none;
+  color: black;
+}
+.home-main-nav .mobile-menu {
+  display: none;
+}
+
+.yours-vibes-main {
+  background-color: #efebf0;
+  padding: 2rem 1rem;
+}
+.yours-vibes-main .first-heading {
+  padding: 3rem;
+}
+.yours-vibes-main .first-heading h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: "Baskervville SC", system-ui;
+  text-align: center;
+  color: #1086ae;
+}
+.yours-vibes-main .images-section-vibe {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+.yours-vibes-main .images-section-vibe a {
+  text-decoration: none;
+  color: black;
+}
+.yours-vibes-main .images-section-vibe .section-vibe-main-box .img-box-main {
+  height: 525px;
+  width: 393px;
+  transition: all 0.2 ease;
+  overflow: hidden;
+}
+.yours-vibes-main .images-section-vibe .section-vibe-main-box .img-box-main:hover img {
+  transform: scale(1.1);
+  filter: opacity(80%);
+}
+.yours-vibes-main .images-section-vibe .section-vibe-main-box .img-box-main img {
+  transition: all 0.5s ease;
+  height: 525px;
+  width: 393px;
+}
+.yours-vibes-main .images-section-vibe .section-vibe-main-box .vibe-img-text {
+  border-radius: 1rem;
+  padding: 0.5rem;
+  padding-left: 2px;
+}
+.yours-vibes-main .images-section-vibe .section-vibe-main-box .vibe-img-text:hover {
+  background-color: rgba(128, 128, 128, 0.071);
+}
+.yours-vibes-main .images-section-vibe .section-vibe-main-box .vibe-img-text:hover i {
+  transform: translate(20px) scale(1.2);
+  color: #FF8F00;
+}
+.yours-vibes-main .images-section-vibe .section-vibe-main-box .vibe-img-text p {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-family: "Baskervville SC", system-ui;
+}
+.yours-vibes-main .images-section-vibe .section-vibe-main-box .vibe-img-text p i {
+  transition: all 0.4s ease-in-out;
+}
+.yours-vibes-main .images-section-vibe .section-vibe-main-box .vibe-img-text .vibe-text-1 {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #FF8F00;
+}
+
+.new-arrival-section-main {
+  background-color: #d0cabc;
+  padding: 3rem 0.5rem;
+}
+.new-arrival-section-main .new-arrival-heading {
+  text-align: center;
+  padding: 2rem;
+}
+.new-arrival-section-main .new-arrival-heading h2 {
+  font-size: 3.5rem;
+  font-family: "Baskervville SC", system-ui;
+  font-weight: 600;
+  color: #1086ae;
+}
+.new-arrival-section-main .hidden {
+  display: none;
+}
+.new-arrival-section-main .new-arrival-main-new-row {
+  display: flex;
+  flex-direction: row;
+}
+.new-arrival-section-main .arrival-ul ul {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  list-style-type: none;
+}
+.new-arrival-section-main .arrival-ul ul li {
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 3px solid transparent;
+  transition: all 0.5s ease;
+}
+.new-arrival-section-main .arrival-ul ul li:hover {
+  border-bottom: 3px solid black;
+}
+.new-arrival-section-main .arrival-ul ul .arrival-first-li:focus .new-arriv-main-row {
+  display: none;
+}
+.new-arrival-section-main .new-arriv-main-row {
+  display: flex;
+  gap: 2rem;
+}
+.new-arrival-section-main .new-arriv-main-row .new-arriv-main-box {
+  position: relative;
+}
+.new-arrival-section-main .new-arriv-main-row .new-arriv-main-box .heart-icon {
+  right: 1.2rem;
+  text-align: end;
+  position: absolute;
+  top: 1rem;
+}
+.new-arrival-section-main .new-arriv-main-row .new-arriv-main-box .heart-icon i {
+  font-size: 1.5rem;
+  color: white;
+}
+.new-arrival-section-main .new-arriv-main-row .new-arriv-main-box .new-arriv-img-text-box {
+  padding: 1rem;
+  padding-left: 0;
+}
+.new-arrival-section-main .new-arriv-main-row .new-arriv-main-box .new-arriv-img-text-box p {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+.new-arrival-section-main .new-arriv-main-row .new-arriv-main-box .new-arriv-img-text-box p .buy-now-btn {
+  padding: 2px 0.8rem;
+  border-radius: 1rem;
+  font-size: 14px;
+  border: 1px solid black;
+  font-weight: 600;
+  background-color: white;
+  margin-left: 2rem;
+}
+
+.star-section-main {
+  padding: 3rem 0.5rem;
+}
+.star-section-main .wedding-edit-heading-main {
+  padding: 2rem;
+}
+.star-section-main .wedding-edit-heading-main h2 {
+  font-family: "Baskervville SC", system-ui;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 600;
+}
+.star-section-main .wedding-edit-main-row {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.star-section-main .wedding-edit-main-row .wedding-edit-main-box .edit-container .img-box-main {
+  max-width: 280px;
+  max-height: 350px;
+  min-width: 260px;
+  min-height: 300px;
+  overflow: hidden;
+}
+.star-section-main .wedding-edit-main-row .wedding-edit-main-box .edit-container .img-box-main img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.star-section-main .wedding-edit-main-row .wedding-edit-main-box .edit-container .text-box-main {
+  text-align: center;
+}
+.star-section-main .wedding-edit-main-row .wedding-edit-main-box .edit-container .text-box-main p {
+  margin-bottom: 0;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: "Baskervville SC", system-ui;
+}
+
+.kids-collection-main {
+  border-color: #d0cabc;
+}
+.kids-collection-main img {
+  max-height: 80vh;
+  width: 100%;
+}
+.kids-collection-main button {
+  position: relative;
+  bottom: 5rem;
+  left: 40%;
+  padding: 0.3rem 2rem;
+  border-radius: 1rem;
+  background-color: goldenrod;
+  border: none;
+}
+
+.call-section-main {
+  background-color: #d0cabc;
+  position: relative;
+  top: -3rem;
+  padding: 4rem 0rem;
+}
+.call-section-main .call-text-main {
+  padding: 4rem 3rem;
+}
+.call-section-main .call-text-main .call-text-1 {
+  font-size: 4rem;
+  font-family: "Baskervville SC", system-ui;
+  font-weight: 600;
+}
+.call-section-main .call-text-main .call-text-2 {
+  font-weight: 500;
+}
+.call-section-main .call-text-main button {
+  margin: 2rem;
+  width: 100%;
+  margin-left: 0;
+  background-color: goldenrod;
+  border: none;
+}
+.call-section-main .call-section-main-img {
+  height: 100%;
+  text-align: center;
+}
+.call-section-main .call-section-main-img img {
+  width: 100%;
+}
+
+.home-footer-main {
+  position: relative;
+  background-color: #efebf0;
+}
+.home-footer-main .suscribe-box-main {
+  align-items: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.home-footer-main .suscribe-box-main p {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.home-footer-main .suscribe-box-main input {
+  padding-left: 1rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+}
+.home-footer-main .footer-main-row {
+  display: flex;
+  justify-content: space-between;
+}
+.home-footer-main .footer-main-row .footer-main-column {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 2rem;
+  min-width: 20%;
+}
+.home-footer-main .footer-main-row .footer-main-column ul {
+  list-style-type: none;
+}
+.home-footer-main .footer-main-row .footer-main-column ul li {
+  padding: 5px;
+}
+.home-footer-main .footer-main-row .footer-main-column .footer-column-first-li {
+  padding: 1rem 0rem;
+  font-size: 18px;
+  font-weight: 600;
+}
+.home-footer-main .footer-bottom-row {
+  padding: 0.5rem;
+}
+.home-footer-main .footer-bottom-row p {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .home-main-nav .home-main-nav .middle-box {
+    display: none;
+  }
+  .home-main-nav .home-main-nav .right-box .nav-right-li {
+    display: none;
+  }
+  .home-main-nav .home-main-nav .right-box .nav-right-last-li {
+    display: block !important;
+  }
+  .home-main-nav .mobile-menu {
+    display: block;
+  }
+  .yours-vibes-main {
+    padding: 0rem;
+  }
+  .yours-vibes-main .first-heading {
+    padding: 0rem;
+  }
+  .yours-vibes-main .images-section-vibe {
+    flex-wrap: wrap;
+  }
+  .yours-vibes-main .images-section-vibe .section-vibe-main-box .img-box-main img {
+    height: auto;
+    width: 250px;
+  }
+  .yours-vibes-main .images-section-vibe .section-vibe-main-box .img-box-main {
+    height: auto;
+    width: 250px;
+  }
+  .new-arrival-section-main .new-arriv-main-row {
+    flex-wrap: wrap;
+  }
+  .star-section-main .wedding-edit-main-row {
+    flex-wrap: wrap;
+  }
+  .call-section-main .call-text-main {
+    padding: 0;
+  }
+  .call-section-main .call-text-main .call-text-1 {
+    font-size: 2.1rem;
+  }
+  .home-footer-main .footer-main-row {
+    flex-wrap: wrap;
+  }
+  html {
+    overflow-x: hidden;
+  }
+  .home-main-nav .home-main-nav .logo-box img {
+    transform: none;
+    max-height: 100px;
+  }
+  .new-arrival-section-main .arrival-ul {
+    gap: 2rem;
+  }
+  .new-arrival-section-main {
+    padding: 2rem 0.5rem;
+  }
+  .home-footer-main .suscribe-box-main p {
+    font-size: 1rem;
+  }
+}
+.home2-header-main .home2-nav-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+}
+.home2-header-main .home2-nav-main .nav-logo-main {
+  position: relative;
+  z-index: 10;
+}
+.home2-header-main .home2-nav-main .nav-middle-main .home2-middle-ul-main {
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-family: "Baskervville SC", system-ui;
+}
+.home2-header-main .home2-nav-main .nav-middle-main .home2-middle-ul-main li {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.6rem;
+  transition: all 0.5s ease;
+}
+.home2-header-main .home2-nav-main .nav-middle-main .home2-middle-ul-main li:hover {
+  background-color: lightgrey;
+}
+.home2-header-main .home2-nav-main .nav-middle-main .home2-middle-ul-main .hover-dropdown:hover .dropdown-hoverable-container {
+  display: block;
+}
+.home2-header-main .home2-nav-main .nav-middle-main .home2-middle-ul-main .hover-dropdown .dropdown-hoverable-container {
+  display: none;
+  transition: all 1s ease;
+}
+.home2-header-main .home2-nav-main .nav-middle-main .home2-middle-ul-main .hover-dropdown .dropdown-hoverable-container .main-dorpdown-container {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  z-index: 9;
+  background-color: white;
+  width: 100%;
+  left: 0;
+  padding: 2.5rem;
+}
+.home2-header-main .home2-nav-main .nav-middle-main .home2-middle-ul-main .hover-dropdown .dropdown-hoverable-container .main-dorpdown-container .dropdown-main-column ul {
+  list-style-type: none;
+}
+.home2-header-main .home2-nav-main .nav-right-main .nav-right-main-ul {
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.home2-header-main .home2-nav-main .nav-right-main .nav-right-main-ul li {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 18px;
+  transition: all 0.5s ease;
+}
+.home2-header-main .home2-nav-main .nav-right-main .nav-right-main-ul li:hover {
+  background-color: lightgrey;
+}
+.home2-header-main .home2-nav-main .nav-right-main .nav-right-main-ul li .offcanvas .offcanvas-body {
+  font-size: 14px;
+}
+.home2-header-main .home2-nav-main .nav-right-main .nav-right-main-ul li .offcanvas .offcanvas-body .offcanvas-mans-collection {
+  padding: 0.5rem;
+}
+.home2-header-main .home2-nav-main .nav-right-main .nav-right-main-ul li .offcanvas .offcanvas-body .offcanvas-mans-collection h5 {
+  font-weight: 600;
+}
+.home2-header-main .home2-nav-main .nav-right-main .nav-right-main-ul li .offcanvas .offcanvas-body .offcanvas-mans-collection p {
+  font-weight: 400;
+}
+.home2-header-main .home2-nav-main .nav-right-main .nav-right-main-ul li .offcanvas .offcanvas-body .offcanvas-mans-collection .mans-wear-images {
+  display: flex;
+  justify-content: space-evenly;
+}
+.home2-header-main .home2-nav-main .nav-right-main .nav-right-main-ul li .offcanvas .offcanvas-body .offcanvas-mans-collection .mans-wear-images img {
+  border-radius: 1rem;
+}
+.home2-header-main .home2-nav-main .nav-right-main .nav-right-main-ul li .offcanvas .offcanvas-body .offcanvas-mans-collection .shop-now-btn {
+  padding: 1rem;
+  padding-left: 0;
+}
+.home2-header-main .home2-nav-main .nav-right-main .nav-right-main-ul li .offcanvas .offcanvas-body .offcanvas-mans-collection .shop-now-btn button {
+  border-radius: 1rem;
+  padding: 5px 1rem;
+  background-color: transparent;
+  border: 2px solid green;
+  color: green;
+}
+
+.explore-main-sec {
+  padding: 3rem 0.5rem;
+}
+.explore-main-sec .explore-main-heading {
+  padding: 1rem;
+}
+.explore-main-sec .explore-main-heading h3 {
+  font-family: "Baskervville SC", system-ui;
+  font-size: 3.5rem;
+}
+.explore-main-sec .explore-main-row {
+  padding: 1rem;
+}
+.explore-main-sec .explore-main-row .explore-main-column {
+  padding: 0.5rem;
+}
+.explore-main-sec .explore-main-row .explore-main-column img {
+  transition: all 1s ease;
+  border-radius: 0.5rem;
+}
+.explore-main-sec .explore-main-row .explore-main-column img:hover {
+  filter: brightness(0.5);
+}
+.explore-main-sec .explore-main-row .explore-main-column .text-box {
+  padding: 0.5rem;
+}
+.explore-main-sec .explore-main-row .explore-main-column .text-box p {
+  margin-bottom: 0;
+  font-family: "Baskervville SC", system-ui;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.explore-main-sec .explore-main-row .explore-main-column .text-box .btn-box {
+  padding: 1rem;
+}
+.explore-main-sec .explore-main-row .explore-main-column .text-box .btn-box button {
+  border: 1px solid green;
+  color: green;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+}
+
+.best-selling-main {
+  padding: 3rem 0.5rem;
+  background-color: lemonchiffon;
+}
+.best-selling-main .best-selling-heading {
+  padding: 2rem;
+  padding-left: 3rem;
+}
+.best-selling-main .best-selling-heading h3 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  font-family: "Baskervville SC", system-ui;
+}
+.best-selling-main .best-selling-main-row {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Poppins", sans-serif;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  transition: transform 0.5s ease-in-out;
+}
+.best-selling-main .best-selling-main-row .best-selling-pro-box {
+  padding: 1rem;
+}
+.best-selling-main .best-selling-main-row .best-selling-pro-box .img-box {
+  min-width: 300px;
+  min-height: 400px;
+}
+.best-selling-main .best-selling-main-row .best-selling-pro-box .img-box img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.best-selling-main .best-selling-main-row .best-selling-pro-box .text-for-img {
+  padding: 0.5rem;
+  text-align: center;
+}
+.best-selling-main .best-selling-main-row .best-selling-pro-box .text-for-img p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.best-selling-main .best-selling-main-row .best-selling-pro-box .text-for-img button {
+  border: 1px solid green;
+  color: green;
+  padding: 0.3rem 2rem;
+  border-radius: 1rem;
+}
+
+.new-arival-sec {
+  padding: 3rem 0.5rem 5rem 0.5rem;
+}
+.new-arival-sec .new-arrival-heading {
+  padding: 1rem;
+}
+.new-arival-sec .new-arrival-category {
+  padding: 0rem;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.new-arival-sec .new-arrival-category .category-box {
+  padding: 0.5rem 3rem;
+  border-bottom: 3px solid white;
+  border-radius: 5px;
+  margin: 0rem 0.5rem;
+  transition: all 1s ease;
+}
+.new-arival-sec .new-arrival-category .category-box:hover {
+  border-bottom: 3px solid green;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.new-arival-sec .new-arrival-category .category-box p {
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Baskervville SC", system-ui;
+}
+.new-arival-sec .new-arival-img-row .new-arrival-column-main {
+  justify-content: center;
+  text-align: center;
+  max-width: 350px;
+}
+.new-arival-sec .new-arival-img-row .new-arrival-column-main img {
+  border-radius: 0.5rem;
+  max-width: 300px;
+}
+.new-arival-sec .new-arival-img-row .image-text-box {
+  padding: 1rem;
+  font-size: 18px;
+}
+.new-arival-sec .new-arival-img-row .image-text-box p {
+  margin-bottom: 2px;
+  font-weight: 500;
+}
+.new-arival-sec .new-arival-img-row .image-text-box button {
+  padding: 0.2rem 0.8rem;
+  font-size: 14px;
+  margin-left: 1rem;
+}
+
+.wedding-edit-sec {
+  padding: 3rem 0rem;
+  background-color: lemonchiffon;
+}
+.wedding-edit-sec .wedding-edit-row {
+  padding: 2rem;
+}
+.wedding-edit-sec .wedding-edit-row img {
+  border-radius: 0.5rem;
+}
+.wedding-edit-sec .wedding-edit-row .text-box {
+  padding: 0.5rem;
+}
+.wedding-edit-sec .wedding-edit-row .text-box p {
+  font-size: 2rem;
+  font-family: "Baskervville SC", system-ui;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.Kids-collection-section {
+  background-color: lemonchiffon;
+}
+.Kids-collection-section img {
+  width: 100vw;
+  max-height: 100vh;
+}
+
+.blogs-section {
+  padding: 3rem 0rem;
+  background-color: lemonchiffon;
+}
+.blogs-section .blogs-images {
+  text-align: center;
+}
+.blogs-section .blogs-images .blog-text {
+  text-align: start;
+  font-size: 15px;
+  padding: 5px;
+  padding-left: 0;
+}
+.blogs-section .blogs-images .blog-text a {
+  text-decoration: underline;
+  color: orange;
+}
+
+.home2-footer-main {
+  background-color: rgba(80, 39, 16, 0.9529411765);
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  color: white;
+}
+.home2-footer-main .home2-first-row {
+  border-bottom: 1px solid white;
+}
+.home2-footer-main .home2-first-row .footer-web-logo img {
+  width: 150px;
+}
+.home2-footer-main .home2-first-row p {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-size: 18px;
+  margin-bottom: 0;
+  height: 100%;
+}
+.home2-footer-main .home2-first-row p input {
+  padding: 5px 0.8rem;
+  margin-left: 5px;
+  border-radius: 0.8rem;
+  border: 1px solid white;
+}
+.home2-footer-main .home2-footer-main-row {
+  padding: 1rem 0rem;
+}
+.home2-footer-main .home2-footer-main-row .home2-footer-columns h5 {
+  padding: 1rem;
+  padding-left: 0;
+}
+.home2-footer-main .home2-footer-main-row .home2-footer-columns ul {
+  padding-left: 5px;
+  list-style: none;
+}
+.home2-footer-main .home2-footer-main-row .home2-footer-columns ul li {
+  padding: 0.3rem 0rem;
+  font-weight: 500;
+}
+.home2-footer-main .home2-footer-main-row .home2-footer-columns ul li a {
+  color: white !important;
+}
+.home2-footer-main .home2-footer-main-row .home2-footer-columns ul li i {
+  font-size: 1.4rem;
+  margin: 0.5rem;
+  color: white !important;
+}
+.home2-footer-main .home2-footer-lest {
+  border-top: 1px solid white;
+  padding-top: 1rem;
+}
+.home2-footer-main .home2-footer-lest p {
+  margin-bottom: 0;
+}
+.home2-footer-main .home2-footer-lest a {
+  color: white !important;
+}
+.home2-footer-main .home2-footer-lest i {
+  font-size: 20px;
+  margin: 0rem 0.5rem;
+  color: white;
+}
+
+@media only screen and (max-width: 576px) {
+  .home2-header-main .home2-nav-main {
+    padding: 0;
+  }
+  .home2-header-main .nav-middle-main {
+    display: none;
+  }
+  .home2-header-main .nav-right-main {
+    display: none;
+  }
+  .home2-header-main .nav-logo-main img {
+    width: 80px;
+  }
+  .explore-main-sec {
+    padding: 0rem;
+  }
+  .explore-main-sec .explore-main-heading h3 {
+    font-size: 1.8rem;
+  }
+  .explore-main-sec .explore-main-row .explore-main-column .text-box p {
+    font-size: 1.5rem;
+  }
+  .explore-main-sec .explore-main-row .explore-main-column .text-box .btn-box {
+    padding: 0.3rem;
+  }
+  .explore-main-sec .explore-main-row .explore-main-column .text-box .btn-box button {
+    padding: 0.2rem 1rem;
+  }
+  .best-selling-main {
+    padding: 0rem;
+  }
+  .best-selling-main .best-selling-heading {
+    padding: 0.5rem;
+  }
+  .best-selling-main .best-selling-heading h3 {
+    font-size: 1.8rem;
+  }
+  .best-selling-main .best-selling-main-row .best-selling-pro-box .img-box {
+    min-width: 200px;
+    min-height: 265px;
+  }
+  .new-arival-sec {
+    padding: 0px;
+  }
+  .new-arival-sec .new-arrival-category .category-box {
+    padding: 0.5rem 1rem;
+  }
+  .new-arival-sec .new-arival-img-row .new-arrival-column-main img {
+    border-radius: 0.5rem;
+    max-width: 130px;
+  }
+  .new-arival-sec .new-arival-img-row .image-text-box {
+    padding: 0;
+    font-size: 12px;
+  }
+  .new-arival-sec .new-arival-img-row .new-arrival-column-main {
+    padding: 0.5rem;
+  }
+  .new-arival-sec .new-arival-img-row .image-text-box button {
+    padding: 3px 12px;
+    font-size: 14px;
+    margin-left: 0;
+  }
+  .new-arival-sec .new-arrival-category {
+    padding-bottom: 0;
+  }
+  .section-heading {
+    font-size: 1.8rem;
+    padding: 1.5rem;
+  }
+  .wedding-edit-sec {
+    padding: 0rem;
+  }
+  .wedding-edit-sec .wedding-edit-row {
+    padding: 0rem;
+  }
+  .wedding-edit-sec .wedding-edit-row .text-box p {
+    font-size: 1rem;
+  }
+  .wedding-edit-sec .wedding-edit-row .wedding-clothe-column {
+    padding: 1rem;
+  }
+  .blogs-section {
+    padding: 0rem;
+  }
+  .blogs-section .blogs-sec-heading {
+    padding: 0;
+  }
+  .blogs-section .blogs-sec-heading .section-heading {
+    padding: 0;
+  }
+  .blogs-section .blogs-images {
+    padding: 1rem;
+  }
+  .blogs-section .blogs-images .blog-text p {
+    font-size: 12px;
+    margin-bottom: 2px;
+  }
+  .blogs-section .blogs-images .blog-text a {
+    font-size: 12px;
+  }
+  .home2-footer-main {
+    padding: 0rem;
+  }
+  .home2-footer-main .footer-web-logo {
+    padding: 0;
+  }
+  .home2-footer-main .footer-web-logo img {
+    max-width: 100px;
+  }
+  .home2-footer-main .footer-input-box {
+    padding: 0rem;
+    text-align: center !important;
+    padding-bottom: 5px;
+  }
+  .home2-footer-main .footer-input-box p {
+    font-size: 12px;
+  }
+  .home2-footer-main .footer-input-box p input {
+    padding: 5px;
+  }
+  .home2-footer-columns {
+    min-width: 50vw;
+  }
+  .home2-footer-main .home2-footer-main-row .home2-footer-columns h5 {
+    font-size: 16px;
+    padding: 2px;
+  }
+  .home2-footer-main .home2-footer-main-row .home2-footer-columns ul li {
+    padding: 0.1rem 0rem;
+    font-weight: 400;
+    font-size: 13px;
+  }
+}/*# sourceMappingURL=main.css.map */
